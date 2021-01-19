@@ -1,0 +1,52 @@
+.body{
+    background-color: #fdf55d ;
+}
+#main-nav{
+    transition: all 0.66s ease-out;
+    border-width: 8px 2px;
+    border-radius: 20px 20px 0 0;
+    border-style: solid;
+    border-color: #c5332a;
+    background: #fff300;
+}
+#main-nav .logo-image{
+    width: 20vmin;
+    max-width: 100%;
+    transition: width 0.66s ease-out;
+    transition: height 0.66s ease-out;
+    padding: 2px 0;
+}
+.header{
+    margin-top: 20vmin;
+}
+
+#details{
+    font-family: serif;
+}
+
+.modules{
+    transition: all 0.66s ease-out;
+    border-width: 8px 2px;
+    border-radius: 20px 20px 0 0;
+    border-style: solid;
+    border-color: #c5332a;
+    background: #fff300;
+}
+
+.container .nav-item{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.nav-link{
+    color: rgb(0, 0, 0);
+}
+
+.contact{
+    transition: all 0.66s ease-out;
+    border-width: 8px 2px;
+    border-radius: 20px 20px 0 0;
+    border-style: solid;
+    border-color: #c5332a;
+    background: #fff300;
+}
