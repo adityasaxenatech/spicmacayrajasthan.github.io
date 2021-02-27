@@ -18,8 +18,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
                                                     <!-- Font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                                                    <!-- jquery -->
+    
 </head>
-<body class="body">
+<body class="home" id="home">
                                                     <!-- Navigation BAR -->                                             
         <nav class="navbar navbar-expand-sm fixed-top" id="main-nav">
             <div class="container">
@@ -33,54 +35,67 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a href="#slider-project" class="nav-link">About Us</a>
+                            <a href="#home" class="nav-link">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a href="#modules" class="nav-link">Modules</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#volunteers" class="nav-link">Volunteers</a>
+                            <a href="#chapters" class="nav-link">Chapters</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#contact" class="nav-link">Contact</a>
+                            <a href="#support" class="nav-link">Our Supporters</a>
                         </li>
                         <li class="nav-item">
                             <a href="#donate" class="nav-link">Donate</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
                     </ul>
-                    <img style="margin-left: 23%;" src="img/years-logo.png" class="logo-image"></a>  
+                    <img style="margin-left: 15%;" src="img/years-logo.png" class="logo-image"></a>  
                 </div>  
             </div>
             <!-- Backlog -->
         </nav>
+        <br>
+        <br>
+        <br>
+        <!--Uploading-->
                                                      <!-- Header -->                                             
                 <!-- The slideshow -->
-            <div style="margin-top: 12vmax;" id="slider-project" class="carousel slide" data-ride="carousel">
+            
+
+            <div style="margin-top:2vmax;" id="slider-project" class="carousel slide" data-ride="carousel">
     
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                      <div class="container-1">
-                        <img src="img/slider/img-1.jpg" class="d-md-block" alt="Jewellery" style="width: 100%; max-height: 60vmin;">
+                      <div class="container">
+                        <!-- <input type="file" id="file-ip-1" onchange="showPreview(event);">
+                        <div class="preview">
+                            <img id="slide-img">
+                        </div> -->
+                        <img src="img/slider/img-1.jpg" id="slide-img" class="d-md-block" alt="Jewellery">
                        </div>   
                   </div>
                   <div class="carousel-item ">
-                    <div class="container-2">
-                        <img src="img/slider/img-2.jpeg" class="d-md-block" alt="Shopping" style="width: 100%; max-height: 60vmin;">
+                    <div class="container">
+                        <img src="img/slider/img-2.jpeg" id="slide-img" class="d-md-block" alt="Shopping">
                     </div>    
                   </div>
                   <div class="carousel-item">
-                    <div class="container-3">
-                        <img src="img/slider/img-3.jpeg" class="d-md-block" alt="Learning" style="width: 100%; max-height: 60vmin;">
+                    <div class="container">
+                        <img src="img/slider/img-3.jpeg" id="slide-img" class="d-md-block" alt="Learning">
                     </div>    
                   </div>
                 </div>
                 
                 <!-- Left and right controls -->
-                <a class="carousel-control-prev" href="#slider-project" data-slide="prev" style="height: 60vmin;">
-                  <span class="carousel-control-prev-icon"></span>
+                <a id="slide-img" class="carousel-control-prev" href="#slider-project" data-slide="prev">
+                  <span class="carousel-control-prev-icon" style="background-color: black;"></span>
                 </a>
-                <a class="carousel-control-next" href="#slider-project" data-slide="next" style="height: 60vmin;">
-                  <span class="carousel-control-next-icon"></span>
+                <a id="slide-img" class="carousel-control-next" href="#slider-project" data-slide="next">
+                  <span class="carousel-control-next-icon" style="background-color: black;"></span>
                 </a>
               </div> 
     <header class="header"> 
@@ -104,85 +119,802 @@
         <h1></h1>
     </div> -->
       <!-- EXPLORE -->
- <div class="high">
-    <div class="sc-end" id="module">
-        <h1></h1>
-    </div>
-    <section class="modules" id="modules">
-      <div class="container">
-          <div class="row">
-              <div class="col text-center py-3">
-               <h1 style="font-size: 5vmin;">Modules at a Glance</h1>
-              </div>
-          </div>
-      </div>
-  </section>
+ <div  id="modules">
+     <br>
+     <br>
+     <br>
+     <br>
+    <section class="modules">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center py-3">
+                 <h1 style="font-size: 5vmin;">Modules at a Glance</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+ </div>     
   <!-- EXPLORE-SECTION -->
   <section id="module-section">
-      <div class="container">
-          <div class="row">
+      <!-- slider --> 
+      <!-- /slider -->
+      <div class="module-container">
+          <div class="module-row">
               <div class="col-md-12 py-3">
-                <h5>Online Series</h5>
-                <div class="container">
-                    <div class="row">
-                      <div class="card card-body col-md-3" id="market-card">
-                          <img src="img/online-series/img-1.jpeg" alt="" style="width: 100%; max-height: 20vmax;">
+                <h5 class="module-heading">Online Series</h5>
+                <div class="slide-mobule-content">
+                    <div style="margin-top:2vmax;" id="slide-module" class="carousel slide" data-ride="carousel">
+                        <div style="margin: 0vmin 20vmin;">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <div class="row">
+                                      <div class="card card-body col-md-3" id="market-card">
+                                          <img src="img/online-series/img-1.jpeg" alt="" style="width: 100%; max-height: 20vmax;">
+                                      </div>
+                                      <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-2.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-3.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-4.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    </div>   
+                                </div>
+                                <div class="carousel-item">
+                                  <div class="row">
+                                      <div class="card card-body col-md-3" id="market-card">
+                                          <img src="img/online-series/img-1.jpeg" alt="" style="width: 100%; max-height: 20vmax;">
+                                      </div>
+                                      <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-2.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-3.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-4.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    </div>  
+                                </div>
+                              </div>
+                        </div>
+                        
+                        <!-- Left and right controls -->
+                        <a id="slide-img-module" class="carousel-control-prev" href="#slide-module" data-slide="prev">
+                          <span class="carousel-control-prev-icon" style="background-color: black;"></span>
+                        </a>
+                        <a id="slide-img-module" class="carousel-control-next" href="#slide-module" data-slide="next">
+                          <span class="carousel-control-next-icon" style="background-color: black;"></span>
+                        </a>
                       </div>
-                      <div class="card card-body col-md-3" id="market-card">
-                        <img src="img/online-series/img-2.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
-                    </div>
-                    <div class="card card-body col-md-3" id="market-card">
-                        <img src="img/online-series/img-3.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
-                    </div>
-                    <div class="card card-body col-md-3" id="market-card">
-                        <img src="img/online-series/img-4.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
-                    </div>
-                    </div>
                 </div> 
               </div>
               <div class="col-md-12 py-3">
-                <h5>Workshop</h5>
-                <div class="container">
-                    <div class="row">
-                      <div class="card card-body col-md-3" id="market-card">
-                          <img src="img/Workshop/img-1.jpeg" alt="" style="width: 100%; max-height: 20vmax;">
+                <h5 class="module-heading">Workshop</h5>
+                <div class="slide-mobule-content">
+                    <div style="margin-top:2vmax;" id="slide-module-workshop" class="carousel slide" data-ride="carousel">
+                        <div style="margin: 0vmin 20vmin;">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <div class="row">
+                                      <div class="card card-body col-md-3" id="market-card">
+                                          <img src="img/online-series/img-1.jpeg" alt="" style="width: 100%; max-height: 20vmax;">
+                                      </div>
+                                      <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-2.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-3.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-4.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    </div>   
+                                </div>
+                                <div class="carousel-item">
+                                  <div class="row">
+                                      <div class="card card-body col-md-3" id="market-card">
+                                          <img src="img/online-series/img-1.jpeg" alt="" style="width: 100%; max-height: 20vmax;">
+                                      </div>
+                                      <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-2.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-3.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-4.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    </div>  
+                                </div>
+                              </div>
+                        </div>
+                        
+                        <!-- Left and right controls -->
+                        <a id="slide-img-module" class="carousel-control-prev" href="#slide-module-workshop" data-slide="prev">
+                          <span class="carousel-control-prev-icon" style="background-color: black;"></span>
+                        </a>
+                        <a id="slide-img-module" class="carousel-control-next" href="#slide-module-workshop" data-slide="next">
+                          <span class="carousel-control-next-icon" style="background-color: black;"></span>
+                        </a>
                       </div>
-                      <div class="card card-body col-md-3" id="market-card">
-                        <img src="img/Workshop/img-2.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
-                    </div>
-                    <div class="card card-body col-md-3" id="market-card">
-                        <img src="img/Workshop/img-3.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
-                    </div>
-                    <div class="card card-body col-md-3" id="market-card">
-                        <img src="img/Workshop/img-4.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
-                    </div>
-                    </div>
                 </div> 
               </div>
               <div class="col-md-12 py-3">
-                <h5>Special Series - Tribute</h5>
-                <div class="container">
-                    <div class="row">
-                      <div class="card card-body col-md-3" id="market-card">
-                          <img src="img/special-series/img-1.jpeg" alt="" style="width: 100%; max-height: 20vmax;">
+                <h5 class="module-heading">Special Series - Tribute</h5>
+                <div class="slide-mobule-content">
+                    <div style="margin-top:2vmax;" id="slide-module-series" class="carousel slide" data-ride="carousel">
+                        <div style="margin: 0vmin 20vmin;">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <div class="row">
+                                      <div class="card card-body col-md-3" id="market-card">
+                                          <img src="img/online-series/img-1.jpeg" alt="" style="width: 100%; max-height: 20vmax;">
+                                      </div>
+                                      <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-2.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-3.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-4.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    </div>   
+                                </div>
+                                <div class="carousel-item">
+                                  <div class="row">
+                                      <div class="card card-body col-md-3" id="market-card">
+                                          <img src="img/online-series/img-1.jpeg" alt="" style="width: 100%; max-height: 20vmax;">
+                                      </div>
+                                      <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-2.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-3.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-4.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    </div>  
+                                </div>
+                              </div>
+                        </div>
+                        
+                        <!-- Left and right controls -->
+                        <a id="slide-img-module" class="carousel-control-prev" href="#slide-module-series" data-slide="prev">
+                          <span class="carousel-control-prev-icon" style="background-color: black;"></span>
+                        </a>
+                        <a id="slide-img-module" class="carousel-control-next" href="#slide-module-series" data-slide="next">
+                          <span class="carousel-control-next-icon" style="background-color: black;"></span>
+                        </a>
                       </div>
-                      <div class="card card-body col-md-3" id="market-card">
-                        <img src="img/special-series/img-3.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
-                    </div>
-                    <div class="card card-body col-md-3" id="market-card">
-                        <img src="img/special-series/img-3.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
-                    </div>
-                    <div class="card card-body col-md-3" id="market-card">
-                        <img src="img/special-series/img-4.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
-                    </div>
-                    </div>
+                </div> 
+              </div>
+              <div class="col-md-12 py-3">
+                <h5 class="module-heading">Volunteer Feedback</h5>
+                <div class="slide-mobule-content">
+                    <div style="margin-top:2vmax;" id="slide-module-volunteer" class="carousel slide" data-ride="carousel">
+                        <div style="margin: 0vmin 20vmin;">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <div class="row">
+                                      <div class="card card-body col-md-3" id="market-card">
+                                          <img src="img/online-series/img-1.jpeg" alt="" style="width: 100%; max-height: 20vmax;">
+                                      </div>
+                                      <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-2.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-3.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-4.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    </div>   
+                                </div>
+                                <div class="carousel-item">
+                                  <div class="row">
+                                      <div class="card card-body col-md-3" id="market-card">
+                                          <img src="img/online-series/img-1.jpeg" alt="" style="width: 100%; max-height: 20vmax;">
+                                      </div>
+                                      <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-2.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-3.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-4.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    </div>  
+                                </div>
+                              </div>
+                        </div>
+                        
+                        <!-- Left and right controls -->
+                        <a id="slide-img-module" class="carousel-control-prev" href="#slide-module-volunteer" data-slide="prev">
+                          <span class="carousel-control-prev-icon" style="background-color: black;"></span>
+                        </a>
+                        <a id="slide-img-module" class="carousel-control-next" href="#slide-module-volunteer" data-slide="next">
+                          <span class="carousel-control-next-icon" style="background-color: black;"></span>
+                        </a>
+                      </div>
+                </div> 
+              </div>
+              <div class="col-md-12 py-3">
+                <h5 class="module-heading">Supporters Speak</h5>
+                <div class="slide-mobule-content">
+                    <div style="margin-top:2vmax;" id="slide-module-speak" class="carousel slide" data-ride="carousel">
+                        <div style="margin: 0vmin 20vmin;">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <div class="row">
+                                      <div class="card card-body col-md-3" id="market-card">
+                                          <img src="img/online-series/img-1.jpeg" alt="" style="width: 100%; max-height: 20vmax;">
+                                      </div>
+                                      <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-2.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-3.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-4.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    </div>   
+                                </div>
+                                <div class="carousel-item">
+                                  <div class="row">
+                                      <div class="card card-body col-md-3" id="market-card">
+                                          <img src="img/online-series/img-1.jpeg" alt="" style="width: 100%; max-height: 20vmax;">
+                                      </div>
+                                      <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-2.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-3.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    <div class="card card-body col-md-3" id="market-card">
+                                        <img src="img/online-series/img-4.jpeg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                    </div>
+                                    </div>  
+                                </div>
+                              </div>
+                        </div>
+                        
+                        <!-- Left and right controls -->
+                        <a id="slide-img-module" class="carousel-control-prev" href="#slide-module-speak" data-slide="prev">
+                          <span class="carousel-control-prev-icon" style="background-color: black;"></span>
+                        </a>
+                        <a id="slide-img-module" class="carousel-control-next" href="#slide-module-speak" data-slide="next">
+                          <span class="carousel-control-next-icon" style="background-color: black;"></span>
+                        </a>
+                      </div>
                 </div> 
               </div>
           </div>
       </div>
-    <!-- CONTACT-SECTION -->
+    </section>
+
+    <!-- Chapters -->
+<div id="chapters">
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <section class="chapters">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center py-3">
+                 <h1 style="font-size: 5vmin;">Chapters at a Glance</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
     
-    <section class="contact" id="contact">
+    <!-- Chapters-SECTION -->
+    <section id="chapters-section">
+        <div id="accordion">
+            <p id="service-button">
+             <button class="btn btn-secondary btn-circle btn-xl" data-toggle="collapse" data-target="#Jaipur" type="button" aria-expanded="true" aria-controls="Jaipur">    
+                 <!-- <img src="img/btn-img/jaipur.jpg" alt="" style="    border-radius: 50%; width: 20vmin; height: 20vmin; margin: 0.5vmax; opacity: 0.3;"> -->
+                 Jaipur
+             </button>
+             <button class="btn btn-secondary btn-circle btn-xl collapsed" data-toggle="collapse" data-target="#Alwar" type="button" aria-expanded="false" aria-controls="Alwar">
+                Alwar
+             </button>
+             <button class="btn btn-secondary btn-circle btn-xl collapsed" data-toggle="collapse" data-target="#BitsPilani" type="button" aria-expanded="false" aria-controls="BitsPilani">
+                Bits Pilani
+             </button>
+             <button class="btn btn-secondary btn-circle btn-xl collapsed" data-toggle="collapse" data-target="#Vanasthali" type="button" aria-expanded="false" aria-controls="Vanasthali">
+                 Vanasthali
+             </button>
+             <button class="btn btn-secondary btn-circle btn-xl collapsed" data-toggle="collapse" data-target="#Niwaru" type="button" aria-expanded="false" aria-controls="Niwaru">
+                 Niwai
+             </button>
+             <button class="btn btn-secondary btn-circle btn-xl collapsed" data-toggle="collapse" data-target="#SriGanganagar" type="button" aria-expanded="false" aria-controls="SriGanganagar">
+                 Sri Ganganagar
+             </button>
+             <button class="btn btn-secondary btn-circle btn-xl" data-toggle="collapse" data-target="#Sikar" type="button" aria-expanded="true" aria-controls="Sikar">    
+                 Sikar
+            </button>
+            <button class="btn btn-secondary btn-circle btn-xl collapsed" data-toggle="collapse" data-target="#Dhaulpur" type="button" aria-expanded="false" aria-controls="Dhaulpur">
+                 Dhaulpur
+            </button>
+            <button class="btn btn-secondary btn-circle btn-xl collapsed" data-toggle="collapse" data-target="#Bikaner" type="button" aria-expanded="false" aria-controls="Bikaner">
+                 Bikaner
+            </button>
+            </p>  
+            <p id="service-content">  
+                <div class="collapse show" id="Jaipur" data-parent="#accordion">
+                    <div class="card card-body" id="Jaipur-card">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h4>Chapter Name</h4>
+                                    <br>
+                                    <h1>Jaipur</h1>
+                                    <br>
+                                    <br>
+
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Co-ordinator</h4>
+                                    <br>
+                                    <h3>Himani Khinchi</h3>
+                                    <h3>Mauli Sharma</h3>
+                                    <br>
+                                    <br>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Contact</h4>
+                                    <br>
+                                    <h5>Email - smnorthrajasthan@spicmacay.com</h5>
+                                    <h5>Mobile/Whats App - +91 98290-23431 </h5>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="collapse" id="Alwar" data-parent="#accordion">
+                    <div class="card card-body" id="Alwar-card">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4>Chapter Name</h4>
+                                <br>
+                                <h1>Alwar</h1>
+                                <br>
+                                <br>
+
+                            </div>
+                            <div class="col-md-4">
+                                <h4>Co-ordinator</h4>
+                                <br>
+                                <h3>RACHNA ASOPA</h3>
+                                <br>
+                                <br>
+                            </div>
+                            <div class="col-md-4">
+                                <h4>Contact</h4>
+                                <br>
+                                <h5>Email - asopa.rachana@rediffmail.com</h5>
+                                <h5>Mobile/Whats App - +91 94144-98866</h5>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="BitsPilani" data-parent="#accordion">
+                    <div class="card card-body" id="BitsPilani-card">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4>Chapter Name</h4>
+                                <br>
+                                <h1>Bits Pilani</h1>
+                                <br>
+                                <br>
+
+                            </div>
+                            <div class="col-md-4">
+                                <h4>Co-ordinator</h4>
+                                <br>
+                                <h3>RAJAN PANDEY</h3>
+                                <h3>ATUL KUMAR</h3>
+                                <br>
+                                <br>
+                            </div>
+                            <div class="col-md-4">
+                                <h4>Contact</h4>
+                                <br>
+                                <h5>Email - rajan.pandey83@gmail.com / atulpilani@yahoo.com</h5>
+                                <h5>Mobile/Whats App - +91 90013-66969 / 94145-42828</h5>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="Vanasthali" data-parent="#accordion">
+                    <div class="card card-body" id="Vanasthali-card">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4>Chapter Name</h4>
+                                <br>
+                                <h1>Vanasthali</h1>
+                                <br>
+                                <br>
+
+                            </div>
+                            <div class="col-md-4">
+                                <h4>Co-ordinator</h4>
+                                <br>
+                                <h3>Himani Khinchi</h3>
+                                <h3>Mauli Sharma</h3>
+                                <br>
+                                <br>
+                            </div>
+                            <div class="col-md-4">
+                                <h4>Contact</h4>
+                                <br>
+                                <h5>Email - smnorthrajasthan@spicmacay.com</h5>
+                                <h5>Mobile/Whats App - +91 98290-23431 </h5>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="Niwaru" data-parent="#accordion">
+                    <div class="card card-body" id="Niwaru-card">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4>Chapter Name</h4>
+                                <br>
+                                <h1>Niwaru</h1>
+                                <br>
+                                <br>
+
+                            </div>
+                            <div class="col-md-4">
+                                <h4>Co-ordinator</h4>
+                                <br>
+                                <h3>Himani Khinchi</h3>
+                                <h3>Mauli Sharma</h3>
+                                <br>
+                                <br>
+                            </div>
+                            <div class="col-md-4">
+                                <h4>Contact</h4>
+                                <br>
+                                <h5>Email - smnorthrajasthan@spicmacay.com</h5>
+                                <h5>Mobile/Whats App - +91 98290-23431 </h5>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="SriGanganagar" data-parent="#accordion">
+                    <div class="card card-body" id="SriGanganagar-card">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4>Chapter Name</h4>
+                                <br>
+                                <h1>Sri Ganganagar</h1>
+                                <br>
+                                <br>
+
+                            </div>
+                            <div class="col-md-4">
+                                <h4>Co-ordinator</h4>
+                                <br>
+                                <h3>Himani Khinchi</h3>
+                                <h3>Mauli Sharma</h3>
+                                <br>
+                                <br>
+                            </div>
+                            <div class="col-md-4">
+                                <h4>Contact</h4>
+                                <br>
+                                <h5>Email - smnorthrajasthan@spicmacay.com</h5>
+                                <h5>Mobile/Whats App - +91 98290-23431 </h5>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="Sikar" data-parent="#accordion">
+                    <div class="card card-body" id="Sikar-card">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4>Chapter Name</h4>
+                                <br>
+                                <h1>Sikar</h1>
+                                <br>
+                                <br>
+
+                            </div>
+                            <div class="col-md-4">
+                                <h4>Co-ordinator</h4>
+                                <br>
+                                <h3>Himani Khinchi</h3>
+                                <h3>Mauli Sharma</h3>
+                                <br>
+                                <br>
+                            </div>
+                            <div class="col-md-4">
+                                <h4>Contact</h4>
+                                <br>
+                                <h5>Email - smnorthrajasthan@spicmacay.com</h5>
+                                <h5>Mobile/Whats App - +91 98290-23431 </h5>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <div class="collapse" id="Dhaulpur" data-parent="#accordion">
+                   <div class="card card-body" id="Dhaulpur-card">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4>Chapter Name</h4>
+                            <br>
+                            <h1>Dhaulpur</h1>
+                            <br>
+                            <br>
+
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Co-ordinator</h4>
+                            <br>
+                            <h3>Himani Khinchi</h3>
+                            <h3>Mauli Sharma</h3>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Contact</h4>
+                            <br>
+                            <h5>Email - smnorthrajasthan@spicmacay.com</h5>
+                            <h5>Mobile/Whats App - +91 98290-23431 </h5>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                   </div>
+               </div>
+               <div class="collapse" id="Bikaner" data-parent="#accordion">
+                   <div class="card card-body" id="Bikaner-card">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4>Chapter Name</h4>
+                            <br>
+                            <h1>Bikaner</h1>
+                            <br>
+                            <br>
+
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Co-ordinator</h4>
+                            <br>
+                            <h3>Himani Khinchi</h3>
+                            <h3>Mauli Sharma</h3>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Contact</h4>
+                            <br>
+                            <h5>Email - smnorthrajasthan@spicmacay.com</h5>
+                            <h5>Mobile/Whats App - +91 98290-23431 </h5>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                   </div>
+               </div>
+             </p>
+         </div> 
+      </section>
+    <!-- Event-Supportes   -->
+    <div id="support">
+        <br>
+        <br>
+        <br>
+        <br>
+    
+        <section class="support">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center py-3">
+                     <h1 style="font-size: 5vmin;">Our Supporters</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section id="support-section">
+        <!-- slider --> 
+        <!-- /slider -->
+        <img src="img/event support/img-1.png" alt="" style="display: block; width: 70%; height: auto; margin: 5vmin auto;">
+        <div class="support-container">
+            <div class="module-row">
+                <div class="col-md-12 py-3">
+                  <div class="slide-support-content">
+                      <div style="margin-top:2vmax;" id="slide-support" class="carousel slide" data-ride="carousel">
+                          <div style="margin: 0vmin 20vmin;">
+                              <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="card card-body col-md-3" id="market-card">
+                                            <img src="img/event support/img-10.png" alt="" style="width: 100%; max-height: 20vmax;">
+                                        </div>
+                                        <div class="card card-body col-md-3" id="market-card">
+                                          <img src="img/event support/img-11.png" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                      </div>
+                                      <div class="card card-body col-md-3" id="market-card">
+                                          <img src="img/event support/img-12.png" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                      </div>
+                                      <div class="card card-body col-md-3" id="market-card">
+                                          <img src="img/event support/img-13.png" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                      </div>
+                                      </div>   
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="card card-body col-md-3" id="market-card">
+                                            <img src="img/event support/img-7.png" alt="" style="width: 100%; max-height: 20vmax;">
+                                        </div>
+                                        <div class="card card-body col-md-3" id="market-card">
+                                          <img src="img/event support/img-3.png" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                      </div>
+                                      <div class="card card-body col-md-3" id="market-card">
+                                          <img src="img/event support/img-4.jpg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                      </div>
+                                      <div class="card card-body col-md-3" id="market-card">
+                                          <img src="img/event support/img-5.png" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                      </div>
+                                      </div>  
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="card card-body col-md-3" id="market-card">
+                                            <img src="img/event support/img-6.png" alt="" style="width: 100%; max-height: 20vmax;">
+                                        </div>
+                                        <div class="card card-body col-md-3" id="market-card">
+                                          <img src="img/event support/img-8.png" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                      </div>
+                                      <div class="card card-body col-md-3" id="market-card">
+                                          <img src="img/event support/img-9.png" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                      </div>
+                                      <div class="card card-body col-md-3" id="market-card">
+                                          <img src="img/event support/img-14.png" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                      </div>
+                                      </div>  
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="card card-body col-md-3" id="market-card">
+                                            <img src="img/event support/img-15.jpg" alt="" style="width: 100%; max-height: 20vmax;">
+                                        </div>
+                                        <div class="card card-body col-md-3" id="market-card">
+                                          <img src="img/event support/img-16.png" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                      </div>
+                                      <div class="card card-body col-md-3" id="market-card">
+                                          <img src="img/event support/img-17.jpg" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                      </div>
+                                      <div class="card card-body col-md-3" id="market-card">
+                                          <img src="img/event support/img-18.png" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                      </div>
+                                      </div>  
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="card card-body col-md-3" id="market-card">
+                                            <img src="img/event support/img-19.png" alt="" style="width: 100%; max-height: 20vmax;">
+                                        </div>
+                                        <div class="card card-body col-md-3" id="market-card">
+                                          <img src="img/event support/img-20.png" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                      </div>
+                                      <div class="card card-body col-md-3" id="market-card">
+                                          <img src="img/event support/img-2.png" alt="Marketing Services" style="width: 100%; max-height: 16.5vmax;">
+                                      </div>
+                                    </div>  
+                                  </div>
+                                </div>
+                          </div>
+                          
+                          <!-- Left and right controls -->
+                          <a id="slide-img-module" class="carousel-control-prev" href="#slide-support" data-slide="prev">
+                            <span class="carousel-control-prev-icon" style="background-color: black;"></span>
+                          </a>
+                          <a id="slide-img-module" class="carousel-control-next" href="#slide-support" data-slide="next">
+                            <span class="carousel-control-next-icon" style="background-color: black;"></span>
+                          </a>
+                        </div>
+                  </div> 
+                </div>
+            </div>
+        </div>
+        <a href="img/jewel-1.png" download>
+            <a class="btn btn-warning" data-toggle="collapse" href="img/jewel-1.png" role="button" aria-expanded="false" aria-controls="collapseExample" style="display: block; margin: 5vmin 30%;">
+                Become Our Supporter
+            </a>
+        </a>
+        
+      </section>
+      <!-- Donate -->
+      <div id="donate">
+        <br>
+        <br>
+        <br>
+        <br>
+    
+        <section class="donate">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center py-3">
+                     <h1 style="font-size: 5vmin;">Donate</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section id="donate-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" id="image">
+                    <img src="img/donate/img-1.png" alt="Scanner" style="margin: 5vmin 0vmin;max-height: 50%;max-width: 100%;">
+                    <img src="img/donate/img-2.png" alt="app" style="margin: 0vmin 0vmin;max-height: 48%;max-width: 100%;">
+                </div>
+                <div class="col-md-6" id="text">
+                    <br>
+                    <br>
+                    <h1>Donate Us<img src="img/donate/img-3.png" alt="donate" style="width: 25%; margin-left: 10vmin;"></h1>
+                    
+                    <br>
+
+                    SPIC MACAY is facing an existential crisis as its funding has dried up even after 40+ years of stellar work as a 
+                    voluntary movement of national and international repute.
+                    Every we arrange 4000+ programs in 1500+ institutions across 800 cities/ towns/ villages touching over 3 million students. 
+                        <br>
+                        <br>
+                        With a pending artist payments of 1.7 crores, SPIC MACAY needs urgent financial support to sustain. 
+                        <br>
+                        <br>
+                        You can help in 2 ways:
+                        <br>
+                        <br>
+                        1. Making a donation - whatever small it is.
+                        <br>
+                        <br>
+
+                        2. Sharing this appeal to more people so that they can help further.
+                        Donate using Credit/ Debit Card or Netbanking - Click here 
+                        <br>
+                        <br>
+                        For Cheque/ Draft/ International Donations/  NEFT/ RTGS - Click here
+                        <br>
+                        <br>
+                        All donations would be exempt under section 80-G of Income Tax Act of 1961 , mail the details of your donation to info@spicmacay.com for receipt.
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT-SECTION -->
+   <div  id="contact">
+       <br>
+       <br>
+       <br>
+       <br>
+    <section class="contact">
         <div class="container">
             <div class="row">
                 <div class="col text-center py-3">
@@ -204,6 +936,11 @@
             </div>
         </div>
     </section>
+   </div> 
+   <!-- coro test00-->
+   
+  </div>
+    
      <!-- Backlog -->
     <script>
         //Get the current year for the copyright
